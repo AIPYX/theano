@@ -1677,7 +1677,7 @@ class PatternSub(LocalOptimizer):
         else:
             raise TypeError("The pattern to search for must start with "
                             "a specific Op instance.")
-        self.__doc__ = (self.__class__.__doc__ +
+        self.__doc__ = ("theano.gof " +
                         "\n\nThis instance does: " +
                         str(self) + "\n")
         self.allow_multiple_clients = allow_multiple_clients
